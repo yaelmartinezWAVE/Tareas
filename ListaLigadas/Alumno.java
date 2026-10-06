@@ -4,11 +4,20 @@ public class Alumno {
 
     private String Alumno;
     private String clse;
+    private String Carrera;
 
-    public Alumno(String Alumno, String clase) {
+    public Alumno(String Alumno, String clase, String Carrera) {
         this.Alumno = Alumno;
         this.clse = clase;
+        this.Carrera = Carrera;
+    }
 
+    public String getCarrera() {
+        return Carrera;
+    }
+
+    public void setCarrera(String carrera) {
+        Carrera = carrera;
     }
 
     public String getAlumno() {
@@ -28,12 +37,8 @@ public class Alumno {
     }
 
 
-
-
-
-
     @Override
     public String toString() {
-        return "Alumno{" + "Alumno='" + Alumno + '\'' + ", clse='" + clse + '\'' + '}';
+        return "Alumno{" + "Alumno='" + Alumno + '\'' + ", clse='" + clse + '\'' + ", Carrera='" + Carrera + '\'' + '}';
     }
 }
